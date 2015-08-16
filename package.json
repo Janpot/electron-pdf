@@ -1,0 +1,34 @@
+{
+  "name": "electron-pdf",
+  "version": "0.0.1",
+  "description": "Pdf rendering service based on atom/electron",
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janpot/electron-pdf"
+  },
+  "keywords": [
+    "pdf",
+    "render",
+    "electron",
+    "html",
+    "dom"
+  ],
+  "author": "Jan Potoms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janpot/electron-pdf/issues"
+  },
+  "homepage": "https://github.com/janpot/electron-pdf",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "generic-pool": "^2.2.0",
+    "is-absolute-url": "^2.0.0",
+    "node-uuid": "^1.4.3"
+  }
+}

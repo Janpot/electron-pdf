@@ -1,0 +1,8 @@
+web:
+  build: .
+  volumes:
+    - ./package.json:/opt/package.json
+    - ./lib/:/opt/lib/
+    - ./run.sh:/opt/run.sh
+  ports:
+    - "3000:3000"
