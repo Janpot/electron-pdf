@@ -21,13 +21,13 @@ $ electron .
 
 ### `GET /:url`
 
-#### `url`
-
-Absolute url to the webpage you want to have rendered.
+`url`: Absolute url to the webpage you want to have rendered.
 
 ```sh
 $ curl http://localhost:3000/https://www.google.com > google.pdf
 ```
+
+<hr>
 
 ### `POST /`
 
