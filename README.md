@@ -34,5 +34,5 @@ $ curl http://localhost:3000/https://www.google.com > google.pdf
 Send a html string as the request body.
 
 ```sh
-$ curl -d "<div>test</div>" http://localhost:3000/ > test.pdf
+$ curl -L https://www.google.com | curl -X POST -d @- http://localhost:3000/ > google.pdf
 ```
