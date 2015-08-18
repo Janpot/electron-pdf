@@ -19,7 +19,9 @@ $ electron .
 
 ## API
 
-### `GET /:url`
+### Endpoints
+
+#### `GET /:url`
 
 `url`: Absolute url to the webpage you want to have rendered.
 
@@ -29,10 +31,19 @@ $ curl http://localhost:3000/https://www.google.com > google.pdf
 
 <hr>
 
-### `POST /`
+#### `POST /`
 
 Send a html string as the request body.
 
 ```sh
 $ curl -L https://www.google.com | curl -X POST -d @- http://localhost:3000/ > google.pdf
 ```
+
+### Options
+
+Use following request headers to control the output pdf appearance.
+
+- `x-pdf-orientation`: `landscape` or `portrait` - Page orientation, defaults to `portrait`.
+- `x-pdf-print-backgrounds`: `false` or `true` - Print backgrounds, defaults to `true`.
+- `x-pdf-margins`: `default`, `node` or `minimum` - Margin type, defaults to `default`.
+- `x-pdf-pageSize`: `A4`, `A3`, `Legal`, `Letter` or `Tabloid` - Paper size, defaults to `A4`.
