@@ -1,6 +1,6 @@
 {
   "name": "electron-pdf",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Pdf rendering service based on atom/electron",
   "main": "./lib",
   "scripts": {
